@@ -1,0 +1,45 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">VE-FAT.COM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="deads">Vefat İlanları</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="adddeads">Vefat İlanı Ver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">İletişim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <button routerLink="admin" class="btn btn-outline-light" type="submit">Admin</button>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-10">
+  <router-outlet></router-outlet>
+</div>
+<div class="col-md-1"></div>
+</div>
+
+
+
+<ngx-spinner size="medium"  name="s1" color="black" type="ball-atom"></ngx-spinner>
+<ngx-spinner size="medium" name="s2" color="black" type="ball-scale-multiple"></ngx-spinner>
+<ngx-spinner size="medium" name="s3" color="black" type="ball-spin-clockwise-fade-rotating"></ngx-spinner>
+

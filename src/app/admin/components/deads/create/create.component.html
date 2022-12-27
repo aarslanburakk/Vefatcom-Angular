@@ -1,0 +1,20 @@
+<mat-form-field appearance="fill" class="dead-create">
+    <mat-label>Vefat Ad</mat-label>
+    <input matInput #txtDeadName>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="dead-create">
+    <mat-label>Vefat Soyad</mat-label>
+    <input matInput #txtDeadUsername>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="dead-create">
+    <mat-label>Vefat Yaşı</mat-label>
+    <input matInput type="number" min="0" max="100" value="0" #txtDeadAge>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="dead-create">
+    <mat-label>Vefat Tarihi</mat-label>
+    <input matInput  [matDatepicker]="picker" #txtDeadDate>
+    <mat-datepicker-toggle matIconSuffix [for]="picker" class="dead-create"></mat-datepicker-toggle>
+    <mat-datepicker #picker class="dead-create"></mat-datepicker>
+  </mat-form-field>
+
+  <button mat-raised-button class="btn" (click)="create(txtDeadName,txtDeadUsername,txtDeadAge,txtDeadDate)">Vefat İlanı Ekle</button>
